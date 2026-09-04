@@ -104,9 +104,13 @@ Z = 단축슬롯 (ATS, F4, 거래소 버튼 표시, 모바일용)<br><br>
 AI 연동(Claude, Gemini)으로 월드내에 npc와 날씨나 뉴스 내용을 대화로 주고 받을 수 있으며, 월드내에 성세율, 아이템 가격, 몬스터 위치, 몬스터 경험치, 배 시간, 보스 스폰 시간등을 npc 에게 질문하고 답변 받을 수 있는 기능입니다.<br>
 (날씨, 뉴스는 ai api token이 필요하기 때문에 비용이 발생하고 일반적인 local 질문은 자체 구축한 ai 엔진이 답변을 하기 때문에 비용이 발생하지 않습니다. 다만, local ai 엔진이 답변을 하기 위해 그래픽카드가 높은 등급을 요구(최소 RTX3080 이상)하고 있습니다.)<br><br>
 
+<img width="640" height="480" alt="cmt_2106230699_RjTso2hr_e1d10130865b76dcddd3e9b2f559ec4345ab6cb7" src="https://github.com/user-attachments/assets/c85673cb-7ef8-46b0-98b1-4e2c7e31de94" /><br><br>
+
 # 드래그 복사<br>
 다른 플레이어 캐릭터에 마우스 우클릭으로 하고 채팅창에 드래그하면 이름을 간편하게 복사할 수 있습니다.<br>
 /누구 또는 /호칭 같은 명령어를 입력하고 캐릭터에 우클릭해서 드래그로 이름을 복사해서 복잡한 캐릭터 이름도 간편하게 처리할 수 있습니다.<br><br>
+
+<img width="640" height="480" alt="스크린샷 2026-09-02 162848" src="https://github.com/user-attachments/assets/7598a3ef-7194-4d92-8d21-15dd0e61fbf1" /><br><br>
 
 # 자동시전 및 자동사용<br>
 인벤토리창에서 물약류(회복물약, 버프물약)에 마우스 우클릭을 누르면 자동사용 활성화되어 20%, 40%, 60%, 80% 단위로 자동 사용을 설정할 수 있습니다.<br>
@@ -121,9 +125,32 @@ AI 연동(Claude, Gemini)으로 월드내에 npc와 날씨나 뉴스 내용을 �
 
 # 클릭 및 키보드 방해 제거<br>
 모든 자동 동작중에는 키보드 입력이나 인벤토리, 스킬 클릭시에 동작이 멈추지 않고 계속 유지되어 전투나 흐름을 방해하지 않습니다.<br>
-바닥을 직접 클릭하거나 다른 행동을 할때만 자동 동작 취소 처리됩니다.<br><br><br>
+바닥을 직접 클릭하거나 다른 행동을 할때만 자동 동작 취소 처리됩니다.<br><br>
 
-<img width="640" height="480" alt="스크린샷 2026-09-02 162848" src="https://github.com/user-attachments/assets/7598a3ef-7194-4d92-8d21-15dd0e61fbf1" /><br><br>
+# 컬렉션<br>
+아이템을 등록해서 캐릭터의 능력치를 향상시키는 리니지m 의 컬렉션 기능입니다.<br>
+컬렉션 기능은 config 에서 on/off 할 수 있도록 설계되어 있어 운영에 필요시 사용여부를 결정할 수 있습니다.<br>
+구버전의 특징상 스팩업의 한계가 있어 무분별한 아이템 추가를 막고자 추가된 기능입니다.<br><br>
+
+<img width="640" height="480" alt="cmt_2042176280_BKpuJ4oI_ba3b92c5fc08bb707931802eac679ff6dee5c408" src="https://github.com/user-attachments/assets/0906872a-cf03-40b6-ae63-0fdf7e3ddd41" /><br><br>
+
+# 레벨패스<br>
+레벨업하면서 지급되는 보조 아이템 용도로 설계한 월간패스 개념의 기능입니다.<br>
+아이템의 종류는 pass 테이블에서 아이템과 수량을 조절할 수 있으며, 프리미엄 패스의 구매 금액 또한 config 에서 설정됩니다.<br><br>
+
+<img width="640" height="480" alt="cmt_2106230699_aCtYEwbS_49496265db3098d23f778e533a3f637283e73eba" src="https://github.com/user-attachments/assets/b47d4fa5-346d-4f5d-b147-54a5a84c2675" /><br><br>
+
+# 거래소<br>
+보유 아이템을 거래소에 등록하고 거래소에 등록된 아이템을 확인하고 아데나로 구매할 수 있습니다.<br>
+구매한 아이템과 판매한 아데나는 모두 창고에 등록됩니다.<br><br>
+
+<img width="644" height="484" alt="cmt_2106230699_vBp0hzyk_89d16d9502a8978b677f95260d2292fd64743aff" src="https://github.com/user-attachments/assets/cedc402c-1050-4395-8089-64e13a7ac0d6" /><br><br>
+
+# 퀘스트<br>
+단검 착용하기, 가죽재킷 착용하기와 같은 간단한 퀘스트를 통해 레벨업과 아이템을 획득할 수 있는 기능입니다.<br>
+db 테이블에 퀘스트의 종류와 보상 내용을 등록하고 관리할 수 있도록 설계되어 있습니다.<br><br>
+
+<img width="640" height="480" alt="cmt_2106230699_yFmqkV38_24c18b17cb0eacff75109cc4ca4a2669d68991da" src="https://github.com/user-attachments/assets/78a8531b-adc1-487b-b0e9-7e0bb54f8c38" /><br><br>
 
 # 저작권<br>
 사용된 에셋은 모두 NC(구 ncsoft) 의 자산이기 때문에 개인적인 개발을 위한 참고 활용 외 지식재산권에 위배되는 배포 행위 및 판매 목적으로 에셋을 활용하거나 사용하지 않음을 선포합니다.<br>
