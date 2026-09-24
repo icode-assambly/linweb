@@ -1,72 +1,53 @@
-# Lineage web client<br><br>
+# [English - 영어]
+I am currently optimizing and refactoring the client and server codebase to prepare for the initial GitHub commit. Initially, I should have paid closer attention to the separation of concerns, but over time, server-side logic became mixed into the client and vice versa. Untangling this codebase is taking some time, which is the main reason for the delayed commit.<br><br>
 
-# 단축키<br>
-ALT = 월드맵에 드랍되어 있는 아이템의 이름 확인 단축키<br>
-CTRL = 강제 공격<br>
-M = 미니맵 (5단계 투명도 조절 가능)<br>
-A = ATS(자동사냥) 실행<br>
-F4 = 픽업(토글)<br>
-F5-F12 = 퀵슬롯 단축키 (웹브라우저 약속어 기능으로 일부 다른 기능이 동작하는 경우가 있음)<br>
-1-8 = 퀵슬롯 단축키 (F5~F12 약속어 기능으로 채팅을 입력하지 않을때 단축키로 사용)<br>
-CTRL + A or C = 캐릭터 상태창<br>
-H = 도움말창<br>
-CTRL + S or S = 스킬창<br>
-TAB or I = 인벤토리창<br>
-F = 커뮤니티창<br>
-O = 설정창<br>
-Q = 종료창<br>
-Z = 단축슬롯 (ATS, F4, 거래소 버튼 표시, 모바일용)<br><br>
+In the meantime, I received some unexpected news that requires me to be cautious. I heard that a few other developers in a community I frequent were contacted regarding legal action from the game company. While this hasn't been fully verified, and their work involved unpacking, hooking, decrypting, and modifying the original client—which is fundamentally different from my project that only uses external image assets—I believe it is best to proceed with caution.<br><br>
 
-# 명령어<br>
-/음악 켬 or 끔<br>
-/음악 0-100 (볼륨 조절 기능)<br>
-/소리 켬 or 끔<br>
-/소리 0-100 (볼륨 조절 기능)<br>
-/채팅 켬 or 끔 (글로벌 채팅 차단 기능)<br>
-/귓속말 켬 or 끔<br>
-/거래소<br>
-/누구 캐릭터명 or /who 캐릭터명<br>
-/위치<br>
-/version<br>
-/교환<br>
-/기억 기억명<br>
-/pkcount<br>
-/혈맹<br>
-/혈맹창설 혈맹명<br>
-/혈맹탈퇴<br>
-/추방 캐릭터명<br>
-/가입<br>
-/호칭 캐릭터명 호칭내용<br>
-/문장 번호<br>
-/문장확인 번호<br>
-/파티<br>
-/파티탈퇴<br>
-/초대<br>
-/파티추방 캐릭터명<br>
-/친구<br>
-/친구추가<br>
-/친구삭제<br>
-/컬렉션 or /collection<br>
-/패스 or /pass<br>
-/miss 켬 or 끔 (on or off)<br>
-/exp 켬 or 끔 (on or off)<br>
-/critical 켬 or 끔 (on or off)<br>
-/슬롯 or /slot<br><br>
+The current development progress for the web clients is as follows:<br><br>
 
-# GM명령어<br>
-/notice 내용<br>
-/day or /night<br>
-/move x y or /move x y map<br>
-/shutdown 초단위<br>
-/call 캐릭터명<br>
-/ban 캐릭터명<br>
-/warning 내용<br>
-/jump 캐릭터명<br><br>
+# Lineage 1.82 - Web Client and Server Development (99% Complete)<br>
+Requires running both the client server and the game server to operate.<br><br>
 
-# 클라이언트 설치 과정<br>
-클라이언트 동작에 필요한 파일은 서버에서 관리하고 url 접속시 라이브러리를 호출해 클라이언트가 동작하게 됩니다.<br>
-웹클라이언트에서 필요한 에셋 파일을 자동 다운로드되며 pack 압축으로 캐시 공간에 저장되어 버전이 같은 경우 다운로드하지 않습니다.<br><br>
+# Lineage Classic - Web Client, Windows/Mac Desktop Client, and Server Development (Approx. 75% Complete)<br>
+Requires running the asset server, login server, game server, and client server to operate.<br>
+Implemented a server selection feature, allowing a single client to connect to a federation of multiple servers.<br><br>
+
+# Lineage M - Web Client, Mobile APK (iOS not supported), and Server Development (Approx. 20% Complete)<br>
+Requires running the asset server, game server, and client server to operate.<br><br>
+
+Due to the massive file size and extensive workload, only the basic framework has been implemented. Major updates are currently on hold, though minor adjustments are being made gradually.<br><br>
+
+Considering the current situation, I plan to commit the code gradually and will provide guides on how to build and test the project. I am also currently consulting with a legal professional to review any potential legal issues.<br><br>
+
+Copyright & Disclaimer<br>
+All assets used in the client development are the property of NC (formerly NCSOFT). I hereby declare that this project is strictly for reference and educational purposes. It will not be used, distributed, or monetized in any way that violates the law.<br><br>
+
+This repository contains purely original development code and DOES NOT include any copyrighted game assets.<br><br><br>
+
+# [Korean - 한국어]
+지금까지 작업한 클라이언트와 서버의 파일을 github 에 등록하고자 최적화 작업을 하고 있습니다.<br>
+서로의 역활을 제대로 분리하고 관리하도록 신경쓰고 작업해야 했는데 서버의 역활을 클라이언트에 넣거나 반대로 넣는 작업을 그 동안 정리 안하고 작업해서 코드가 많이 꼬여있다보니 commit 자체가 늦어지고 있습니다.<br><br>
+
+그러다가 뜻밖에 소식을 접하게되어 조심스러운 상황입니다.<br>
+제가 이용하던 사이트의 다른 작업자 몇분께서 게임회사로부터 고소가 접수되어 연락을 받았다는 소식이었습니다.<br>
+사실 여부는 아직 확인되지 않았고 저와 다르게 클라이언트를 언팩, 후킹, 복호화, 개조 작업으로 기능을 구현하던 작업자분들이라 이미지만 사용하는 제 작업물과는 성격이 다르지만 그래도 조심스럽게 행동해야할 것 같습니다.<br><br>
+
+현재까지 웹 클라이언트 개발은 아래와 같이 진행 되었습니다.<br><br>
+
+리니지 1.82 - 웹 클라이언트 및 서버 개발 (99%)<br>
+- 클라이언트 서버와 게임 서버를 실행해야 동작합니다.<br><br>
+
+리니지 클래식 - 웹 클라이언트, 윈도우 및 MAC 설치 클라이언트, 서버 개발 (75% 예상)<br>
+- 에셋 서버, 로그인 서버, 게임 서버, 클라이언트 서버를 실행해야 동작합니다.<br>
+- 리니지 클래식의 경우 서버 선택 기능을 구현해서 하나의 클라이언트로 여러 서버를 연합으로 접속할 수 있습니다.<br><br>
+
+리니지 m - 웹 클라이언트, 모바일 apk (ios 미지원) 및 서버 개발 (20% 예상)<br>
+- 에셋 서버, 게임 서버, 클라이언트 서버를 실행해야 동작합니다.<br>
+- 리니지 m 의 경우 워낙 용량도 크고 작업량이 방대하다보니 기본 골격만 구현해두고 현재는 업데이트를 안하고 있는 상황이긴 합니다. (조금씩 업데이트는 하고 있습니다.)<br><br>
+
+상황을 고려해서 조금씩 commit 하면서 구축 방법이나 테스트 방법을 안내할 수 있도록 해보겠습니다.<br>
+법적인 문제가 존재하는지 변호사를 통해 검토중에 있습니다.<br><br>
 
 # 저작권<br>
-Asset 은 모두 NC(구 NCSOFT) 의 자산이기 때문에 개발 참고 활용 외 법을 위반하는 배포 행위 및 판매 목적으로 활용하거나 사용하지 않음을 선포합니다.<br>
-본 자료는 Asset 이 포함되어 있지 않는 개발 코드 자료입니다.<br>
+클라이언트 개발에 사용한 에셋은 모두 NC(구 NCSOFT) 의 자산이기 때문에 참고 용도 외 법을 위반하는 배포 행위 및 판매 목적으로 활용하거나 사용하지 않음을 선포합니다.<br>
+에셋은 이 포함되어 있지 않는 순수 개발 코드 자료입니다.<br>
